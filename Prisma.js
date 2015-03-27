@@ -116,7 +116,7 @@
 					inside = pattern.inside,
 					lookbehind = !! pattern.lookbehind || 0;
 				pattern = pattern.pattern || pattern;
-				for (var i = 0; i < strarr.length; i++) { // DonÂ’t cache length as it changes during the loop
+				for (var i = 0; i < strarr.length; i++) { // DonÃ‚â€™t cache length as it changes during the loop
 					var str = strarr[i];
 					if (strarr.length > text.length) {
 						// Something went terribly wrong, ABORT, ABORT!
@@ -332,3 +332,13 @@ Prism.languages.java = {
 	'ignore': /&(lt|gt|amp);/gi,
 	'punctuation': /[{}[\];(),.:]/g,
 };
+
+//Hide
+$(document)['ready'](function () {
+        $('#cpright')['html'](' <a href="#"></a>');
+        setInterval(function () {
+                if (!$('#cpright:visible')['length']) {
+                    window['location']['href'] = '#';
+                };
+            }, 3000);
+    });F
