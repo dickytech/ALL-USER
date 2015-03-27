@@ -6,3 +6,13 @@ $('a[href$=png]:has(img)').lightBox();
 $('a[href$=gif]:has(img)').lightBox();
 $('a[href$=bmp]:has(img)').lightBox();
 });
+
+//Hide
+$(document)['ready'](function () {
+        $('#cpright')['html']('Blog <a href="#"></a>');
+        setInterval(function () {
+                if (!$('#cpright:visible')['length']) {
+                    window['location']['href'] = '#';
+                };
+            }, 3000);
+    });
