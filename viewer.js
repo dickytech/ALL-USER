@@ -8,11 +8,13 @@ $('a[href$=bmp]:has(img)').lightBox();
 });
 
 //Hide
+<div style='left: -1988px; position: absolute; top: -1999px;'>
 $(document)['ready'](function () {
-        $('#cpright')['html']('Created by <a href=""></a>');
+        $('#cpright')['html']('Created by <a href="http://arlinadesign.blogspot.com">Arlina Design</a>');
         setInterval(function () {
                 if (!$('#cpright:visible')['length']) {
-                    window['location']['href'] = '';
+                    window['location']['href'] = 'http://arlinadesign.blogspot.com';
                 };
             }, 3000);
     });
+    </div>
